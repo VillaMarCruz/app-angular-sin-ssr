@@ -32,7 +32,7 @@
             "scripts": []
           },
           "configurations": {
-            "production": {
+            "prod": {
               "budgets": [
                 {
                   "type": "initial",
@@ -47,22 +47,22 @@
               ],
               "outputHashing": "all"
             },
-            "development": {
+            "dev": {
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "prod"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "production": {
-              "buildTarget": "app-angular-sin-ssr:build:production"
+            "prod": {
+              "buildTarget": "app-angular-sin-ssr:build:prod"
             },
-            "development": {
-              "buildTarget": "app-angular-sin-ssr:build:development"
+            "dev": {
+              "buildTarget": "app-angular-sin-ssr:build:dev"
             }
           },
           "defaultConfiguration": "development"
